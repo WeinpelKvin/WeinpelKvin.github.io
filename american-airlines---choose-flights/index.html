@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose Flights · Kevin Weinpel</title>
+  <meta name="description" content="Case study: redesigning the American Airlines flight selection experience, adding $111 million per year in revenue.">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/nav.js" defer></script>
+</head>
+<body class="cs cs--choose-flights">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <nav class="site-nav__inner" aria-label="Main">
+      <a class="site-nav__brand" href="../">Kevin Weinpel</a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav__links" id="site-nav-links">
+        <li><a href="../just-projects/">Projects</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../assets/files/KevinWeinpel_Resume.docx" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="cs-hero">
+      <div class="container">
+        <h1 class="cs-hero__title">Choose Flights - Building a better flight selection</h1>
+        <p class="cs-hero__subtitle"><strong>American Airlines website</strong></p>
+        <div class="cs-hero__media">
+          <iframe src="https://player.vimeo.com/video/1059188437?autoplay=1&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;background=1" allow="autoplay; fullscreen; picture-in-picture" title="Choose Flights demo video"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <ul class="cs-meta">
+        <li><img src="../assets/images/route_24dp_E8EAED.svg" alt="Platforms"><span>Desktop<br>Tablet<br>Mobile Web</span></li>
+        <li><img src="../assets/images/person_24dp_E8EAED.svg" alt="Team"><span>1 Product Designer<br>2 Product Owners<br>6 Developers</span></li>
+        <li><img src="../assets/images/flag_24dp_E8EAED.svg" alt="Deliverables"><span>Research insights<br>Final mockups<br>Interactive prototypes<br>Executive presentations</span></li>
+        <li><img src="../assets/images/create_24dp_E8EAED.svg" alt="Tools"><span>Figma<br>UserZoom<br>Tobii Eye Tracking</span></li>
+      </ul>
+
+      <div class="cs-intro prose">
+        <p>American Airlines' core revenue engine – the flight booking experience, drives ~$24 billion of airline revenue per year. Our team approached this high-stakes work by combining deep customer insights with strategic business understanding.</p>
+      </div>
+
+      <h2 class="label">The Problem</h2>
+      <div class="callout">
+        <img src="../assets/images/psychology_24dp_E8EAED.svg" alt="">
+        <p class="callout__statement"><strong>Users don't know what's included with the fares that they are shopping for.</strong></p>
+        <p>This leads many users to decide fares by price or past flying experience.</p>
+      </div>
+
+      <h2 class="label">The Solution</h2>
+      <div class="callout">
+        <img src="../assets/images/lightbulb_24dp_E8EAED.svg" alt="">
+        <p class="callout__statement"><strong>Make the flight selection process more transparent by making fare benefits a core part of the flow.</strong></p>
+      </div>
+
+      <div class="prose" style="margin-top:24px">
+        <p><strong>Our main objectives were:</strong></p>
+        <ul>
+          <li>Increase incremental revenue from fares without impacting current revenue.</li>
+          <li>Create one matrix that works across all flight selection products.</li>
+          <li>Be able to offer and personalize more fares to customers to increase loyalty.</li>
+        </ul>
+      </div>
+
+      <div class="outcomes">
+        <h2 class="outcomes__heading"><img src="../assets/images/celebration_24dp_E8EAED.svg" alt="">Outcomes:</h2>
+        <div class="outcomes__grid">
+          <p><strong>+$111 million/yr</strong>Increase annual revenue at American Airlines by +$111 million/yr</p>
+          <p><strong>+1.7%</strong>Conversion rate of the legacy design vs the new design.</p>
+          <p><strong>+Fare Benefit Service</strong>Creation of a fare benefit service that increases the resiliency and reduces the cost to maintain the service for multiple teams.</p>
+        </div>
+      </div>
+
+      <section class="cs-section">
+        <h2>Discovery / Define</h2>
+
+        <div class="cs-block">
+          <h3>Understanding our users</h3>
+          <div class="two-col prose">
+            <p>We got a lot of feedback from the business stakeholders on the overall direction that they wanted us to take the booking flow, but we also had to keep in mind the users of aa.com today as stakeholders as well. To get their insights into the booking flow today I created a research plan to gather both qualitative and quantitative data on the choose flights page.</p>
+            <ul>
+              <li>Surveys / interviews</li>
+              <li>Those who need to travel and those who choose to travel</li>
+              <li>Discovered that customers don't know what they are purchasing a lot of the time so they just choose the cheapest option.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Design Thinking</h3>
+          <div class="two-col">
+            <figure class="figure"><figcaption>Buy a feature</figcaption><img src="../assets/images/Buy-a-feature-results.png" alt="Buy a feature exercise results" loading="lazy"></figure>
+            <figure class="figure"><figcaption>Importance difficulty matrix</figcaption><img src="../assets/images/CostDifficulty-Matrix.png" alt="Importance and difficulty matrix" loading="lazy"></figure>
+          </div>
+          <h4>New vision for booking flow</h4>
+          <figure class="figure"><img src="../assets/images/Schematic-Diagram.png" alt="Schematic diagram of the new booking flow vision" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Cabin / fare card sort</h3>
+          <div class="prose"><p>In an open card sorting exercise, I explored how users categorize American's 26 different fares. I ran three studies.</p></div>
+          <figure class="figure"><img src="../assets/images/Card-Sorting.png" alt="Card sorting study results" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Tools that tell customers the benefits of each fare</h3>
+          <div class="prose">
+            <p>One of our discoveries was that all the tools that users have available to learn about American Airlines fares or compare fares against each other don't get many clicks. The number came out ~0.5% of users interacted with one of the tools when they're shopping.</p>
+            <p><strong>This insight led us to think 3 things about our users:</strong></p>
+            <ul>
+              <li>Either they don't know how to find where the info is</li>
+              <li>They believe that they already have that knowledge to make a decision about their flight</li>
+              <li>Or reviewing fare product benefits isn't a natural part of how our users purchase flights.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Comparing the two legacy experiences</h3>
+          <div class="prose"><p>On average users start interacting with the Dallas/Fort Worth to Phoenix search 8 seconds faster than the New York to London search.</p></div>
+          <div class="two-col">
+            <figure class="figure"><figcaption>2 column matrix</figcaption><img src="../assets/images/2-column_75.png" alt="Legacy 2 column fare matrix" loading="lazy"></figure>
+            <figure class="figure"><figcaption>5 column matrix</figcaption><img src="../assets/images/5-column_75.png" alt="Legacy 5 column fare matrix" loading="lazy"></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <h2>Design / Deliver</h2>
+
+        <div class="cs-block">
+          <h3>Optimizing the flight selection flow</h3>
+          <div class="prose"><p>Wireframes that I created to create a more optimal flow of the flight selection process. Removing and adding steps to the user journey where necessary.</p></div>
+          <div class="stack">
+            <img src="../assets/images/AA.com-Booking-User-Flow-Wireframes-MVP-1---CONCEPT-.png" alt="Booking user flow wireframes" loading="lazy">
+            <img src="../assets/images/CF_Wireframes.png" alt="Choose flights wireframes" loading="lazy">
+            <img src="../assets/images/CF_Wireframes_2.png" alt="Choose flights wireframes, continued" loading="lazy">
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Design &amp; Validation</h3>
+          <div class="prose"><p>After wireframing ideas and working through the mid and high-fidelity designs we did both moderated and unmoderated testing of the booking flow with the new search pages.</p></div>
+          <div class="two-col" style="margin-top:24px">
+            <img src="../assets/images/Eyetracking_1.png" alt="Eye-tracking heat map" loading="lazy">
+            <div class="prose">
+              <h4>Usability testing</h4>
+              <p>We started by analyzing data gathered during the competitive analysis, which provided insights into how similar features are structured and performed in the market. Using this as a foundation, I facilitated a collaborative session where stakeholders could prioritize potential features by allocating resources, encouraging them to think critically about trade-offs and value.</p>
+              <p>This activity not only surfaced consensus on must-have functionalities but also sparked discussions about differentiators that could elevate the user experience. By doing this design thinking session we were able to assign a value to some of the features that stakeholders would want to see in a new booking flow.</p>
+            </div>
+            <img src="../assets/images/Mockups-Desktop_Entire-Page-.png" alt="Desktop mockup of the full page" loading="lazy">
+            <div class="prose">
+              <h4>Eyetracking</h4>
+              <p>We also did a few studies of eye-tracking so that we could understand user motivation in a more detailed way.</p>
+            </div>
+          </div>
+          <blockquote class="quote">
+            <img src="../assets/images/lightbulb_24dp_E8EAED.svg" alt="">
+            <p>Over the course of the 2 years of doing multiple iterations and working through different problems that came up we ended up testing with <strong>~2,500 users</strong> on our testing platform userzoom, at the airport, and in person.</p>
+          </blockquote>
+        </div>
+
+        <div class="cs-block">
+          <h3>Final design</h3>
+          <figure class="figure"><img src="../assets/images/ChooseFlights_Search.png" alt="Final choose flights search results design" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Fare selection</h3>
+          <div class="prose"><p>We streamlined fare selection by integrating fare benefits directly into the flight selection flow. In the legacy version the fare benefits weren't being clicked on so that led us to think that people didn't consider those when purchasing their flight, only thinking about price. Putting the fare benefits directly part of the flow is a win win for both users and American Airlines because it allows users to see directly what they're being offered and American Airlines to directly market to their customers.</p></div>
+          <figure class="figure"><img src="../assets/images/ChooseFlights_Fares_2.png" alt="Fare selection design with benefits" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Sorting and filtering</h3>
+          <figure class="figure"><img src="../assets/images/ChooseFlights_Filter.png" alt="Sorting and filtering design" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Date Carousel</h3>
+          <figure class="figure"><img src="../assets/images/Date-Carousel.png" alt="Date carousel design" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Choose Flights Responsive</h3>
+          <figure class="figure"><img src="../assets/images/Responsive-Cards.png" alt="Cards showing how choose flights can be responsive" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <h2>Final Outcome</h2>
+        <ul class="final-outcomes">
+          <li><span class="material-symbols-outlined" aria-hidden="true">currency_exchange</span><h3>Increased annual revenue at American Airlines by $111 million.</h3></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">currency_exchange</span><h3>Raised conversion rate of all ticket sales by 1.7%</h3></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">flight_takeoff</span><h3>Personalized flight selection</h3></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">format_list_bulleted</span><h3>Created a fare benefit service</h3></li>
+        </ul>
+      </section>
+
+      <section class="cs-end" aria-labelledby="cs-end-title">
+        <p class="ending-text">Thanks for reading!</p>
+        <div class="cs-end__contact">
+          <p>Want to talk about this project, or one like it?</p>
+          <a class="button button--light" href="mailto:kevinweinpel@protonmail.com">Email me</a>
+        </div>
+        <h2 class="cs-end__title" id="cs-end-title">Next case study</h2>
+        <a class="case-card" href="../american-airlines---checkout-app/">
+          <div class="case-card__media">
+            <img src="../assets/images/checkout-card.jpg" alt="Traveler with an AAdvantage card" loading="lazy">
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">American Airlines - Checkout</h3>
+            <p class="case-card__text">A new checkout used across 40 flows. Cut the top 20 checkout errors by 10.5% and raised conversion by 0.44%.</p>
+            <span class="case-card__cta" aria-hidden="true">Read case study →</span>
+          </div>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__info">
+        <div class="site-footer__brand">
+          <h2 class="site-footer__name">Kevin Weinpel</h2>
+          <img src="../assets/images/footer-asterisk.svg" width="38.9205" height="40.9091" alt="">
+        </div>
+        <address>Dallas, Texas<br><a href="mailto:kevinweinpel@protonmail.com">kevinweinpel@protonmail.com</a></address>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="../just-projects/">All projects</a></li>
+        <li><a href="https://www.linkedin.com/in/kevin-weinpel-b35967112/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="../assets/files/KevinWeinpel_Resume.docx" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <p class="site-footer__copy">© 2026 – Kevin Weinpel</p>
+    </div>
+  </footer>
+</body>
+</html>

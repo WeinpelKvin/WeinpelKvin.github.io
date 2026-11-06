@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout · Kevin Weinpel</title>
+  <meta name="description" content="Case study: creating a reusable checkout application for American Airlines, now used across 40 flows.">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/nav.js" defer></script>
+</head>
+<body class="cs cs--checkout">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <nav class="site-nav__inner" aria-label="Main">
+      <a class="site-nav__brand" href="../">Kevin Weinpel</a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav__links" id="site-nav-links">
+        <li><a href="../just-projects/">Projects</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../assets/files/KevinWeinpel_Resume.docx" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="cs-hero">
+      <div class="container">
+        <h1 class="cs-hero__title">Checkout - Creating a reusable payment application</h1>
+        <p class="cs-hero__subtitle"><strong>American Airlines website</strong></p>
+        <div class="cs-hero__media">
+          <iframe src="https://player.vimeo.com/video/1130362205?autoplay=1&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;background=1" allow="autoplay; fullscreen; picture-in-picture" title="Checkout demo video"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <ul class="cs-meta">
+        <li><img src="../assets/images/route_24dp_E8EAED.svg" alt="Platforms"><span>Desktop<br>Tablet<br>Mobile Web<br>Kiosk</span></li>
+        <li><img src="../assets/images/person_24dp_E8EAED.svg" alt="Team"><span>1 Product Designer<br>4 Product Owners<br>12 Developers</span></li>
+        <li><img src="../assets/images/flag_24dp_E8EAED.svg" alt="Deliverables"><span>Research insights<br>Final mockups<br>Interactive prototypes<br>Executive presentations</span></li>
+        <li><img src="../assets/images/create_24dp_E8EAED.svg" alt="Tools"><span>Figma<br>UserZoom</span></li>
+      </ul>
+
+      <h2 class="label" style="margin-top:64px">The Problem</h2>
+      <div class="callout">
+        <img src="../assets/images/psychology_24dp_E8EAED.svg" alt="">
+        <p class="callout__statement"><strong>American Airlines has many different applications of how to make purchases online.</strong></p>
+        <ul class="prose" style="padding-left:1.2em;margin:0;gap:4px">
+          <li>Leads to a lot of tech debt and inconsistent experiences.</li>
+          <li>Most haven't been updated in years including the primary one in booking.</li>
+          <li>The current page is outdated and can be optimized.</li>
+        </ul>
+      </div>
+
+      <h2 class="label">The Solution</h2>
+      <div class="callout">
+        <img src="../assets/images/lightbulb_24dp_E8EAED.svg" alt="">
+        <p class="callout__statement"><strong>Create a new checkout application that works across all of American Airlines products.</strong></p>
+      </div>
+
+      <div class="prose" style="margin-top:24px">
+        <p><strong>Our main objectives were:</strong></p>
+        <ul>
+          <li>Create a reusable and scalable checkout page.</li>
+          <li>Reduce errors on the page.</li>
+          <li>Increase usage of credits and miles.</li>
+        </ul>
+      </div>
+
+      <div class="outcomes">
+        <h2 class="outcomes__heading"><img src="../assets/images/celebration_24dp_E8EAED.svg" alt="">Outcomes:</h2>
+        <ul>
+          <li><strong>40 different flows</strong> now use the checkout app.</li>
+          <li>10.5% reduction in the top 20 errors on the checkout page</li>
+          <li>.44% increase in conversion</li>
+          <li>5% increase in ancillary revenue</li>
+          <li>Average load time was reduced by 3 seconds</li>
+        </ul>
+      </div>
+
+      <section class="cs-section">
+        <h2>Discovery / Define</h2>
+
+        <div class="cs-block">
+          <h3>Design Thinking</h3>
+          <div class="prose">
+            <p>I kicked off the project by doing multiple design thinking sessions with key stakeholders to start to frame the problem and create goalposts that we wanted to hit with the change in the page. The main objectives for the new booking engine were to increase the incremental revenue that we get from the products we already offer and increase loyalty to the American Airlines brand, either having people join or see the value of becoming more loyal to the airline.</p>
+            <p>We did a competitive analysis into a buy a feature session and then used the data from those two to map the ideas on an importance difficulty matrix. The initial design thinking sessions helped us decide what success looked like for the project and more concrete goals to achieve the objectives that American Airlines was looking for.</p>
+          </div>
+          <h4>New rough booking flow</h4>
+          <div class="prose"><p>The sessions ended with us having some general goals for the search team to go after and a rough diagram of the vision for what the stakeholders would want the booking flow to be in the future. Our initial design thinking sessions we did as a team helped align all the teams involved on a unified vision for the future of booking on aa.com.</p></div>
+          <figure class="figure"><img src="../assets/images/Schematic-Diagram.png" alt="Rough diagram of the future booking flow" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Competitive Analysis</h3>
+          <div class="prose">
+            <p>I conducted a competitive analysis of major airlines and leading e-commerce platforms to identify effective checkout patterns and pain points. By comparing user flows, pricing displays, and payment methods, I uncovered best practices that improve clarity and reduce friction. These insights directly informed the design of a new checkout experience that feels modern, intuitive, and aligned with user expectations.</p>
+            <p>We looked at other major airlines to see what they were doing, but we also looked at large e-commerce sites to see what we can learn from them also.</p>
+          </div>
+          <div class="stack">
+            <img src="../assets/images/CompetitiveAnalysis.png" alt="Competitive analysis of airline checkout pages" loading="lazy">
+            <img src="../assets/images/CompetitiveAnalysis2.png" alt="Competitive analysis of e-commerce checkout pages" loading="lazy">
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Problems that we uncovered</h3>
+          <div class="problem-list">
+            <blockquote class="quote"><img src="../assets/images/psychology_24dp_E8EAED.svg" alt=""><p>Cognitive load of the current page is very high</p></blockquote>
+            <blockquote class="quote"><img src="../assets/images/settings_24dp_E8EAED.svg" alt=""><p>Components on the page don't dynamically reload.</p></blockquote>
+            <blockquote class="quote"><img src="../assets/images/devices_24dp_E8EAED.svg" alt=""><p>There are hundreds of different products that all have their own checkout page.</p></blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <h2>Design / Deliver</h2>
+
+        <div class="cs-block">
+          <h3>Wireframes</h3>
+          <div class="prose"><p>Wireframes for the checkout app</p></div>
+          <div class="stack">
+            <img src="../assets/images/Possible-new-flow.png" alt="Possible new checkout flow" loading="lazy">
+            <img src="../assets/images/Screenshot-2025-09-09-at-4.27.54-PM.png" alt="Checkout wireframes" loading="lazy">
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Design &amp; Validation</h3>
+          <div class="prose"><p>In my role, I led the creation of wireframes for a new checkout experience, starting with low-fidelity sketches to align on structure and user flow before moving into interactive prototypes. These wireframes became a shared reference point across teams, helping me collaborate more effectively with product managers to clarify requirements, with developers to confirm feasibility, and with business stakeholders to ensure alignment with goals and constraints. Because the ideas were visual and tangible early on, we were able to surface questions, get feedback, and make decisions quickly. The wireframes also allowed me to run usability tests with users early in the process, validating assumptions and refining the flow before any development work began, which ultimately reduced rework and improved cross-functional alignment.</p></div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Legacy designs</h3>
+          <figure class="figure"><img src="../assets/images/Review-and-Pay-3-.png" alt="Legacy review and pay page" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Redesigned Checkout</h3>
+          <figure class="figure"><img src="../assets/images/Screenshot-2025-09-09-at-4.44.16-PM.png" alt="Redesigned checkout page" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Form Container Components</h3>
+          <div class="prose">
+            <p>One of the enhancements I wanted to make to the American Airlines checkout page was using progressive disclosure on the form. Looking at other e-commerce companies we were able to see how they were building their payment form with steps. Breaking the large payment form into many smaller forms allows us to improve both the front-end UX and the back-end architecture.</p>
+            <p><strong>Some of the benefits:</strong></p>
+            <ul>
+              <li>Breaking up a very long form into smaller more consumable forms.</li>
+              <li>Smaller chunks to do error validation on.</li>
+              <li>Dynamically updating components.</li>
+              <li>Allowing trip offers to be combined with other payment methods or credits.</li>
+            </ul>
+            <p>We started by breaking the payment form into two steps as the MVP, but then added more steps to include all the different sub-forms that are required for various use cases.</p>
+          </div>
+          <figure class="figure"><img src="../assets/images/Review-and-Pay-4-.png" alt="Form container components" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Payment form</h3>
+          
+          <div class="stack">
+            <img src="../assets/images/Saved-Card_3.png" alt="Payment form with saved card" loading="lazy">
+            <img src="../assets/images/Forms-of-payment.png" alt="Forms of payment" loading="lazy">
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>Saved Cards</h3>
+          <div class="stack">
+            <img src="../assets/images/Saved-Card_2.png" alt="Saved cards design" loading="lazy">
+            <img src="../assets/images/Saved-Card_1.png" alt="Saved cards design, alternate state" loading="lazy">
+            <img src="../assets/images/Saved-Card.png" alt="Saved cards design, selection" loading="lazy">
+          </div>
+        </div>
+
+        <div class="cs-block">
+          <h3>New flight card</h3>
+          <div class="prose"><p>Part of the new checkout app was creating a new flight card component. This is a component that appears in many places around aa.com. It took collaboration across many designers to align on the new direction for the card. It took many months of conversation and designing to come to a good solution.</p></div>
+
+          <div class="prose" style="margin-top:32px"><p><strong>Segment card</strong><br>The top tabs of the card are the slices and then each card is the segment of the trip.</p></div>
+          <figure class="figure"><img src="../assets/images/FlightCard1.png" alt="Segment flight card" loading="lazy"></figure>
+
+          <div class="prose" style="margin-top:32px"><p><strong>Expanded view</strong><br>Includes all the details that users would see on each slice of their flight search.</p></div>
+          <figure class="figure"><img src="../assets/images/FlightCard2.png" alt="Expanded flight card" loading="lazy"></figure>
+
+          <div class="prose" style="margin-top:32px"><p><strong>Code share flights</strong><br>If a flight is a code share (half AA, half another airline) we wanted to make it more clear that the user will be traveling with another airline for that portion of the trip.</p></div>
+          <figure class="figure"><img src="../assets/images/FlightCard3.png" alt="Code share flight card" loading="lazy"></figure>
+
+          <div class="prose" style="margin-top:32px"><p><strong>Other transportation</strong><br>At American Airlines we also offer tickets with buses and train legs. So we would need to make it clear to people that they are purchasing a ticket that could be a bus and a flight.</p></div>
+          <figure class="figure"><img src="../assets/images/FlightCard4.png" alt="Flight card with bus or train leg" loading="lazy"></figure>
+        </div>
+
+        <div class="cs-block">
+          <h3>Other payment services</h3>
+          <ul class="prose" style="padding-left:1.2em;margin:0;gap:4px">
+            <li>All additional journeys</li>
+            <li>Modal</li>
+            <li>QR code on the kiosk</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <h2>Final Outcome</h2>
+        <ul class="final-outcomes">
+          <li><img src="../assets/images/devices_24dp_E8EAED.svg" alt=""><h3>40 journeys so far have adopted the checkout app</h3></li>
+          <li><img src="../assets/images/payments_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""><h3>Increased checkout conversion by .44%</h3></li>
+          <li><img src="../assets/images/payments_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""><h3>5% increase in ancillary revenue</h3></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">trending_down</span><h3>10.5% reduction in the top 20 errors on the checkout page</h3></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">trending_down</span><h3>Average load time was reduced by 3 seconds</h3></li>
+        </ul>
+      </section>
+
+      <section class="cs-end" aria-labelledby="cs-end-title">
+        <p class="ending-text">Thanks for reading!</p>
+        <div class="cs-end__contact">
+          <p>Want to talk about this project, or one like it?</p>
+          <a class="button button--light" href="mailto:kevinweinpel@protonmail.com">Email me</a>
+        </div>
+        <h2 class="cs-end__title" id="cs-end-title">Next case study</h2>
+        <a class="case-card" href="../team-app/">
+          <div class="case-card__media">
+            <img src="../assets/images/TeamApp_1.jpg" alt="Screens from the Service Autopilot Team App" loading="lazy">
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">Service Autopilot - Team App</h3>
+            <p class="case-card__text">A 0→1 mobile app that streamlined how service teams manage tasks, schedules, and field operations.</p>
+            <span class="case-card__cta" aria-hidden="true">Read case study →</span>
+          </div>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__info">
+        <div class="site-footer__brand">
+          <h2 class="site-footer__name">Kevin Weinpel</h2>
+          <img src="../assets/images/footer-asterisk.svg" width="38.9205" height="40.9091" alt="">
+        </div>
+        <address>Dallas, Texas<br><a href="mailto:kevinweinpel@protonmail.com">kevinweinpel@protonmail.com</a></address>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="../just-projects/">All projects</a></li>
+        <li><a href="https://www.linkedin.com/in/kevin-weinpel-b35967112/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="../assets/files/KevinWeinpel_Resume.docx" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <p class="site-footer__copy">© 2026 – Kevin Weinpel</p>
+    </div>
+  </footer>
+</body>
+</html>
